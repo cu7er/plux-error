@@ -6,7 +6,7 @@ This is not an HTMX extension, this extends HTMX by providing a quick and simple
 
 ## How it works
 
-Upon receiving a response code, PLUX-ERROR will replace a region in an HTML template with a similarly named region in the server response. If a response code is returned and the response body does not contain this region, a fallback message will be displayed in this region. If no response is received (e.g., if the device is offline), a 'connection error' message will be shown.
+Upon receiving a response code, PLUX-ERROR will replace a region in an HTML template with a similarly named region in the server response. If a response code is returned and the response body does not contain this region, a fallback message based on the response code will be displayed in this region. If no response is received (e.g., if the device is offline), a 'connection error' message will be shown.
 
 ## How to use it
 
