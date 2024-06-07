@@ -13,3 +13,7 @@ Upon receiving a response code, PLUX-ERROR will replace a region in an HTML temp
 * In a HTML template: Include a blank region <aside id="hx_error"></aside> on all pages. This is where any errors will be displayed.
 * In a HTML template: Load the file plux-error.js in the document head, i.e., <script src="<your path here>/plux-error.js"></script>. Add hx-preserve="true" if using it with the extension head-support.js.
 * Server-side: On an error, return a region <aside id="hx_error"></aside>. Include any classes here for theming as desired.
+
+## Extra
+
+plux-error does not update URLs on errors including where hx-push-url="true".  This is intended behaviour as the point is showing error notification not redirection to an error page.
